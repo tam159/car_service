@@ -1,4 +1,5 @@
 """Kafka producer utilities."""
+
 import json
 import os
 import time
