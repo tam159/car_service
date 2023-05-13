@@ -1,0 +1,59 @@
+version: 1
+
+sources:
+  - name: raw_car
+    description: Car service raw data.
+    schema: raw_car
+    tables:
+      - name: customers
+        description: Raw customers data.
+        columns:
+          - name: email
+          - name: customer_id
+            description: Primary key for customers.
+            tests:
+              - unique
+              - not_null
+          - name: country
+
+      - name: hardware_sales
+        description: Raw hardware sales data.
+        columns:
+          - name: email
+            description: Foreign key to customers.email.
+            tests:
+              - relationships:
+                  to: source('raw_car', 'customers')
+                  field: email
+
+          - name: order_id
+            description: Primary key for hardware sales.
+            tests:
+              - unique
+              - not_null
+          - name: revenue
+          - name: timestamp
+
+      - name: subscription_events
+        description: Raw subscription events data.
+        columns:
+          - name: event_type
+            description: "{{ doc('event_type') }}"
+            tests:
+              - not_null
+              - accepted_values:
+                  values: ['subscription_created', 'subscription_renewed', 'subscription_cancelled']
+          - name: order_id
+            description: Order id of subscription events.
+            tests:
+              - not_null
+          - name: timestamp
+            tests:
+              - not_null
+          - name: customer_id
+            description: Foreign key to customers.customer_id.
+            tests:
+              - relationships:
+                  to: source('raw_car', 'customers')
+                  field: customer_id
+          - name: revenue
