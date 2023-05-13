@@ -20,7 +20,7 @@ SQL transformation queries are managed by dbt in [dbt_models](dbt_models)
 
 
 ## [Data visualization](./media/Subscription_Hardware_Sales_Performance.pdf)
-![Cancellation Rate Over Time](./media/Cancellation-Rate-Over-Time-Monthly.png)
+[![Cancellation Rate Over Time](./media/Cancellation-Rate-Over-Time-Monthly.png)](./media/Subscription_Hardware_Sales_Performance.pdf)
 
 
 ## Project development and coding convention
