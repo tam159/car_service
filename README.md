@@ -19,8 +19,7 @@ SQL transformation queries are managed by dbt in [dbt_models](dbt_models)
 ![Data Documentation](./media/revenue_by_customer_dbt_model.png)
 
 
-## [Data visualization](https://docs.google.com/viewer?url=https://raw.githubusercontent.com/tam159/car_service/main/media/Subscription_Hardware_Sales_Performance.pdf)
-### [dashboard.pdf](./media/Subscription_Hardware_Sales_Performance.pdf)
+## [Data visualization](./media/Subscription_Hardware_Sales_Performance.pdf)
 ![Cancellation Rate Over Time](./media/Cancellation-Rate-Over-Time-Monthly.png)
 
 
