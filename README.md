@@ -1,10 +1,23 @@
 # Car services data pipelines and analytics
 
-This repository shows a demonstration of a near real-time data pipeline from Kafka to BigQuery.
+This repository shows a demonstration of a near real-time data pipeline from Kafka to BigQuery and data transformations within BigQuery via dbt.
 
 ## High level data pipeline architecture
 ![Data pipeline](./media/Spark-Structured-Streaming-BigQuery-Pipeline.png)
 
+## Data modeling and analytics
+SQL transformation queries are managed by dbt in [dbt_models](dbt_models)
+
+[dbt][dbt] provide some highlight features:
+- Data quality with testing
+- Snapshot data (SCD Type 2)
+- Reusable and modular code with Jinja
+- Integration with Git and CI/CD process
+- Data documentation including data lineage
+![Data Documentation](./media/revenue_by_customer_dbt_model.png)
+
+## Data visualization
+![Data Visualization](.media/Subscription_Hardware_Sales_Performance.pdf)
 
 ## Project development and coding convention
 This project is using [Poetry][poetry] for dependency management and packaging. e.g:
