@@ -19,6 +19,8 @@ SQL transformation queries are managed by dbt in [dbt_models](dbt_models)
 ## Data visualization
 ![Data Visualization](./media/Subscription_Hardware_Sales_Performance.pdf)
 
+![Data Visualization](https://docs.google.com/viewer?url=https://github.com/tam159/car_service/blob/main/media/Subscription_Hardware_Sales_Performance.pdf)
+
 ## Project development and coding convention
 This project is using [Poetry][poetry] for dependency management and packaging. e.g:
 ```shell
