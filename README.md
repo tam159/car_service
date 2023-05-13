@@ -1,4 +1,10 @@
-# Car service data pipelines and analytics
+# Car services data pipelines and analytics
+
+This repository shows a demonstration of a near real-time data pipeline from Kafka to BigQuery.
+
+## High level data pipeline architecture
+![Data pipeline](./media/Spark-Structured-Streaming-BigQuery-Pipeline.png)
+
 
 ## Project development and coding convention
 This project is using [Poetry][poetry] for dependency management and packaging. e.g:
