@@ -8,7 +8,7 @@ This repository shows a demonstration of a near real-time data pipeline from Kaf
 
 
 ## Data modeling and analytics
-SQL transformation queries are managed by dbt in [dbt_models](dbt_models)
+SQL transformation queries are managed by dbt in [dbt_models](dbt_models/models/curated_car)
 
 [dbt][dbt] provide some highlight features:
 - Data quality with testing

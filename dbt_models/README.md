@@ -1,6 +1,8 @@
-Welcome to your new dbt project!
+# Car service dbt models
 
-### Using the starter project
+Data models are represented by BigQuery view and tables in [curated_car](models/curated_car) dataset
+
+## Using the starter project
 
 Try running the following commands:
 - dbt run
@@ -8,7 +10,7 @@ Try running the following commands:
 - dbt docs generate
 - dbt docs serve
 
-### Resources:
+## Resources:
 - Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
 - Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
 - Join the [chat](https://community.getdbt.com/) on Slack for live discussions and support
