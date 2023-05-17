@@ -52,13 +52,13 @@ if __name__ == "__main__":
     producer = Producer(read_kafka_config(config_file=config_file_path))
 
     topic = "subscription_events"
-    key = "key"
+    key = "tam_order"
     messages = [
         {
             "customer_id": "tam_id",
             "event_type": "subscription_created",
             "order_id": "tam_order",
-            "revenue": 100,
+            "revenue": 10000,
             "timestamp": int(time.time()),
         },
         {
